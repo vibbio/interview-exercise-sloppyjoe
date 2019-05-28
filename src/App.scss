@@ -1,0 +1,70 @@
+body {
+  text-align: center;
+  line-height: 100vh;
+
+}
+
+html {
+  background-color:honeydew;
+}
+
+$form_background-col: salmon;
+
+form {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: arial;
+  z-index: 9999 !important; // fixes bug
+  
+  input[type="password"], [type="text"], .login-username input {
+    font-family: arial !important;
+    padding: 5px 10px !important;
+    border: 1px solid black;
+    font-size: 16px;
+    width: calc(100% - 20px);
+    background-color: papayawhip;
+    padding-left: 5px;
+  }
+  height: 306px;
+  width: 228px;
+  background-color: salmon;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(black, 1.0);
+  padding: 22px 36px 22px 36px;
+  [type="button"] {
+    margin-top: 15px;
+  }
+
+  padding-top: 57px;
+  height: 220px;
+}
+
+.login-username {
+  .login-label {
+    font-size: 16px;
+    float: left;
+    margin-bottom: 4px;
+  }
+  input {
+    float: left;
+    clear: left;
+  }
+}
+
+.login-password-label {
+  clear: both;
+  padding-top: 15px;
+  .login-password {
+    float: left
+  }
+  .login-showpass {
+    float: right;
+  }
+  [type="checkbox"] {
+    float: right
+  }
+}
+
